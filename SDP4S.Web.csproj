@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88F0C83E-5B0F-45AD-9B3A-DE299537DDB7}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDP4S.Web</RootNamespace>
+    <AssemblyName>SDP4S.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <WebGreaseLibPath>..\..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.29023, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DataAnnotationsExtensions, Version=1.1.0.0, Culture=neutral, PublicKeyToken=358a5681c50fd84c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\DataAnnotationsExtensions.1.1.0.0\lib\NETFramework40\DataAnnotationsExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DataAnnotationsExtensions.ClientValidation, Version=1.1.0.0, Culture=neutral, PublicKeyToken=358a5681c50fd84c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\DataAnnotationsExtensions.MVC3.1.1.0.0\lib\NETFramework40\DataAnnotationsExtensions.ClientValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth, Version=3.4.7.11121, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DotNetOpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="FiftyOne.Foundation, Version=1.0.4.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FiftyOne.Foundation.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.SignalR.Core.1.2.2\lib\net40\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Owin, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.SignalR.Owin.1.2.2\lib\net40\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=1.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.SignalR.SystemWeb.1.2.2\lib\net40\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.Host.SystemWeb.1.0.1\lib\net40\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.1000.523\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.1000.523\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.6.0.4\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="PhoneNumbers, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ShareDlls\PhoneNumbers.dll</HintPath>
+    </Reference>
+    <Reference Include="Recaptcha, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\temp\reCaptcha.dll\En\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="sysglobl" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivator, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebActivator.1.2.0.0\lib\NETFramework40\WebActivator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RegisterClientValidationExtensions.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.Launchpad.cs" />
+    <Compile Include="Controllers\OrderController.Helper.cs" />
+    <Compile Include="CoreCode\BillingAccountHelper.cs" />
+    <Compile Include="CoreCode\IPaymentAPI.cs" />
+    <Compile Include="Controllers\OpenIdController.cs" />
+    <Compile Include="Controllers\RestController.cs" />
+    <Compile Include="Controllers\ServiceController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CustUserController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\ShareToExtrafield.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="CoreCode\Captcha\CaptchaController.cs" />
+    <Compile Include="CoreCode\Captcha\CaptchaImage.cs" />
+    <Compile Include="CoreCode\Captcha\CaptchaImageHandler.cs" />
+    <Compile Include="CoreCode\Captcha\CaptchaImageHelper.cs" />
+    <Compile Include="CoreCode\Captcha\CaptchaValidationAttribute.cs" />
+    <Compile Include="CoreCode\CultureHelper.cs" />
+    <Compile Include="CoreCode\DateTimeModelBinder.cs" />
+    <Compile Include="CoreCode\FileResult.cs" />
+    <Compile Include="CoreCode\ModelBinder.cs" />
+    <Compile Include="CoreCode\RestUrlHelper.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="letgo.aspx.cs">
+      <DependentUpon>letgo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="letgo.aspx.designer.cs">
+      <DependentUpon>letgo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MastPage.Master.cs">
+      <DependentUpon>MastPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MastPage.Master.designer.cs">
+      <DependentUpon>MastPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModel.cs" />
+    <Compile Include="Models\CustUserModel.cs" />
+    <Compile Include="Models\HomeModels.cs" />
+    <Compile Include="Models\LayoutModel.cs" />
+    <Compile Include="Models\ServiceModels.cs" />
+    <Compile Include="Models\LaunchpadModel.cs" />
+    <Compile Include="Models\OfferModel.cs" />
+    <Compile Include="Models\OrderModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportConnection\ReportViewerConnection.cs" />
+    <Compile Include="Report\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\UserControls\TextBoxCalendar.ascx.cs">
+      <DependentUpon>TextBoxCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\UserControls\TextBoxCalendar.ascx.designer.cs">
+      <DependentUpon>TextBoxCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SignalRHub\LogoutHub.cs" />
+    <Compile Include="ValidateLive.aspx.cs">
+      <DependentUpon>ValidateLive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidateLive.aspx.designer.cs">
+      <DependentUpon>ValidateLive.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\patch.xml" />
+    <Content Include="App_Data\web_browsers_patch.xml" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap\js\npm.js" />
+    <Content Include="Content\Default\Images\amex.png" />
+    <Content Include="Content\Default\Images\apps\Essentials_Icon.jpg" />
+    <Content Include="Content\Default\Images\app_bg.gif" />
+    <Content Include="Content\Default\Images\background-header-menu-large.png" />
+    <Content Include="Content\Default\Images\background-header-menu.png" />
+    <Content Include="Content\Default\Images\background-header-menu1.png" />
+    <Content Include="Content\Default\Images\bgtitle.jpg" />
+    <Content Include="Content\Default\Images\billing_info.jpg" />
+    <Content Include="Content\Default\Images\body_mnu_bg_m.gif" />
+    <Content Include="Content\Default\Images\body_mnu_bg_m.png" />
+    <Content Include="Content\Default\Images\body_title_mb_dash.jpg" />
+    <Content Include="Content\Default\Images\body_title_mb_dash.png" />
+    <Content Include="Content\Default\Images\box_bott_m.gif" />
+    <Content Include="Content\Default\Images\box_bott_m.png" />
+    <Content Include="Content\Default\Images\box_tile_m.gif" />
+    <Content Include="Content\Default\Images\box_tile_m.png" />
+    <Content Include="Content\Default\Images\box_top_m.jpg" />
+    <Content Include="Content\Default\Images\box_top_m.png" />
+    <Content Include="Content\Default\Images\btn\add-red.png" />
+    <Content Include="Content\Default\Images\btn\addl-red.png" />
+    <Content Include="Content\Default\Images\btn\add_department.png" />
+    <Content Include="Content\Default\Images\btn\apply.jpg" />
+    <Content Include="Content\Default\Images\btn\bulk_assign.jpg" />
+    <Content Include="Content\Default\Images\btn\cancel-terminate.png" />
+    <Content Include="Content\Default\Images\btn\cancel-terminate_btn.png" />
+    <Content Include="Content\Default\Images\btn\cancel_opt_in.png" />
+    <Content Include="Content\Default\Images\btn\change.jpg" />
+    <Content Include="Content\Default\Images\btn\changerole.jpg" />
+    <Content Include="Content\Default\Images\btn\change_otp_in.png" />
+    <Content Include="Content\Default\Images\btn\checkout.png" />
+    <Content Include="Content\Default\Images\btn\close-black.png" />
+    <Content Include="Content\Default\Images\btn\confirm.jpg" />
+    <Content Include="Content\Default\Images\btn\launch-blue.png" />
+    <Content Include="Content\Default\Images\btn\login-blue_1.gif" />
+    <Content Include="Content\Default\Images\btn\login-red.jpg" />
+    <Content Include="Content\Default\Images\btn\manageLicenses.jpg" />
+    <Content Include="Content\Default\Images\btn\manage_apps.png" />
+    <Content Include="Content\Default\Images\btn\manage_user.png" />
+    <Content Include="Content\Default\Images\btn\manage_users.png" />
+    <Content Include="Content\Default\Images\btn\no.jpg" />
+    <Content Include="Content\Default\Images\btn\pay.jpg" />
+    <Content Include="Content\Default\Images\btn\reschedule_btn.png" />
+    <Content Include="Content\Default\Images\btn\review.png" />
+    <Content Include="Content\Default\Images\btn\save_opt_in.png" />
+    <Content Include="Content\Default\Images\btn\unlock.jpg" />
+    <Content Include="Content\Default\Images\btn\upgrade.jpg" />
+    <Content Include="Content\Default\Images\btn\yes.jpg" />
+    <Content Include="Content\Default\Images\btn\yes_continue.jpg" />
+    <Content Include="Content\Default\Images\btn_change.png" />
+    <Content Include="Content\Default\Images\btn_middle.png" />
+    <Content Include="Content\Default\Images\content_area_btm_login_s.png" />
+    <Content Include="Content\Default\Images\content_area_login_s.png" />
+    <Content Include="Content\Default\Images\content_reg_area.png" />
+    <Content Include="Content\Default\Images\content_reg_area_btm.png" />
+    <Content Include="Content\Default\Images\delete.png" />
+    <Content Include="Content\Default\Images\edit.png" />
+    <Content Include="Content\Default\Images\f-btm.png" />
+    <Content Include="Content\Default\Images\f-mid.png" />
+    <Content Include="Content\Default\Images\f-top.png" />
+    <Content Include="Content\Default\Images\favicon.ico" />
+    <Content Include="Content\Default\Images\favicon.png" />
+    <Content Include="Content\Default\Images\Grants.jpg" />
+    <Content Include="Content\Default\Images\hbg.gif" />
+    <Content Include="Content\Default\Images\home.png" />
+    <Content Include="Content\Default\Images\icons\error-icon.png" />
+    <Content Include="Content\Default\Images\icons\ok-icon.png" />
+    <Content Include="Content\Default\Images\icons\refresh.jpg" />
+    <Content Include="Content\Default\Images\Insights.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\Default\Images\login_01.gif" />
+    <Content Include="Content\Default\Images\login_01_1.gif" />
+    <Content Include="Content\Default\Images\login_01_trans.png" />
+    <Content Include="Content\Default\Images\login_02.gif" />
+    <Content Include="Content\Default\Images\login_02.png" />
+    <Content Include="Content\Default\Images\login_03.gif" />
+    <Content Include="Content\Default\Images\login_03.png" />
+    <Content Include="Content\Default\Images\login_04.gif" />
+    <Content Include="Content\Default\Images\login_05.gif" />
+    <Content Include="Content\Default\Images\logo-1-click.png" />
+    <Content Include="Content\Default\Images\logo2-cust.png" />
+    <Content Include="Content\Default\Images\logout.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Default\Images\main-menu-arrow.png" />
+    <Content Include="Content\Default\Images\main-menu-expanded.png" />
+    <Content Include="Content\Default\Images\main_logo_footer.png" />
+    <Content Include="Content\Default\Images\mastercard.png" />
+    <Content Include="Content\Default\Images\menu_bg.gif" />
+    <Content Include="Content\Default\Images\msg_error.png" />
+    <Content Include="Content\Default\Images\msg_success.png" />
+    <Content Include="Content\Default\Images\myBusiness.gif" />
+    <Content Include="Content\Default\Images\no_image.gif" />
+    <Content Include="Content\Default\Images\Opportunities.png" />
+    <Content Include="Content\Default\Images\otp-icon.png" />
+    <Content Include="Content\Default\Images\p-top-bar.png" />
+    <Content Include="Content\Default\Images\btn\resend_activation.jpg" />
+    <Content Include="Content\Default\Images\pdficon.png" />
+    <Content Include="Content\Default\Images\phone-icon.png" />
+    <Content Include="Content\Default\Images\picto-nav-bar-cog.png" />
+    <Content Include="Content\Default\Images\picto-nav-bar-community.png" />
+    <Content Include="Content\Default\Images\picto-nav-bar-grant.png" />
+    <Content Include="Content\Default\Images\picto-nav-bar-house.png" />
+    <Content Include="Content\Default\Images\picto-nav-bar-paperboard.png" />
+    <Content Include="Content\Default\Images\picto-nav-bar-star.png" />
+    <Content Include="Content\Default\Images\point.png" />
+    <Content Include="Content\Default\Images\registration_bg.png" />
+    <Content Include="Content\Default\Images\rss.png" />
+    <Content Include="Content\Default\Images\Saas.png" />
+    <Content Include="Content\Default\Images\separator.png" />
+    <Content Include="Content\Default\Images\seperator.jpg" />
+    <Content Include="Content\Default\Images\footer2.gif" />
+    <Content Include="Content\Default\Images\footer2.png" />
+    <Content Include="Content\Default\Images\singtel-billing-icon.png" />
+    <Content Include="Content\Default\Images\succesful_assign.jpg" />
+    <Content Include="Content\Default\Images\title_bar_login_s.png" />
+    <Content Include="Content\Default\Images\topbar.jpg" />
+    <Content Include="Content\Default\Images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\Default\Images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\Default\Images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\Default\Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\Default\Images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\Default\Images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\Default\Images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\Default\Images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\Default\Images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\Default\Images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\Default\Images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\Default\Images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\Default\Images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\Default\Images\visa.png" />
+    <Content Include="Content\Default\Images\visamasterlogo.png" />
+    <Content Include="Content\Default\Styles\style_cssen-au.css" />
+    <Content Include="Content\Default\Styles\style_cssms-my.css" />
+    <Content Include="Content\Default\Styles\system.base.css" />
+    <Content Include="Content\html\Billing_Mobile.htm" />
+    <Content Include="Content\html\Billing.htm" />
+    <Content Include="Content\html\CartCustomize\002.html" />
+    <Content Include="Content\html\ChangeOffer\ChangeBundle_43.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeBundle_54.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_001.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_0011.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_002.htm" />
+    <Content Include="Content\Default\Images\active-menu-bg.jpg" />
+    <Content Include="Content\Default\Images\active-step-first.jpg" />
+    <Content Include="Content\Default\Images\active-step.jpg" />
+    <Content Include="Content\Default\Images\add.png" />
+    <Content Include="Content\Default\Images\alert.png" />
+    <Content Include="Content\Default\Images\apps\createShortcut.jpg" />
+    <Content Include="Content\Default\Images\apps\medium_singtel_icon_eshop_0.jpg" />
+    <Content Include="Content\Default\Images\apps\oneoffice-icon.png" />
+    <Content Include="Content\Default\Images\apps\qbo.jpg" />
+    <Content Include="Content\Default\Images\apps\tracktrace_car_120.jpg" />
+    <Content Include="Content\Default\Images\apps\visibility-icon.png" />
+    <Content Include="Content\Default\Images\apps\webbuilder-icon.png" />
+    <Content Include="Content\Default\Images\apps_bg.png" />
+    <Content Include="Content\Default\Images\arrow.gif" />
+    <Content Include="Content\Default\Images\arrow_down.png" />
+    <Content Include="Content\Default\Images\arrow_left.gif" />
+    <Content Include="Content\Default\Images\arrow_right.gif" />
+    <Content Include="Content\Default\Images\arrow_up.png" />
+    <Content Include="Content\Default\Images\bg-body.png" />
+    <Content Include="Content\Default\Images\bg-buttons.png" />
+    <Content Include="Content\Default\Images\bg-cite.png" />
+    <Content Include="Content\Default\Images\bg-header.png" />
+    <Content Include="Content\Default\Images\bg-shade-dark-flip.png" />
+    <Content Include="Content\Default\Images\bg-shade-dark.png" />
+    <Content Include="Content\Default\Images\bg-shade-gray-lrg.png" />
+    <Content Include="Content\Default\Images\bg-shade-light-flip.png" />
+    <Content Include="Content\Default\Images\bg-shade-light.png" />
+    <Content Include="Content\Default\Images\bg-shade-medium.png" />
+    <Content Include="Content\Default\Images\bg-shade-white-lrg-flip.png" />
+    <Content Include="Content\Default\Images\bg-shade-white-lrg.png" />
+    <Content Include="Content\Default\Images\bg-shade-white-sml.png" />
+    <Content Include="Content\Default\Images\bigarrow.png" />
+    <Content Include="Content\Default\Images\billing_icon.jpg" />
+    <Content Include="Content\Default\Images\black_arrow.png" />
+    <Content Include="Content\Default\Images\black_header.png" />
+    <Content Include="Content\Default\Images\blank.gif" />
+    <Content Include="Content\Default\Images\blanka.gif" />
+    <Content Include="Content\Default\Images\blank_over.gif" />
+    <Content Include="Content\Default\Images\blank_overa.gif" />
+    <Content Include="Content\Default\Images\btn\assign.jpg" />
+    <Content Include="Content\Default\Images\btn\back-blue.jpg" />
+    <Content Include="Content\Default\Images\btn\back-cat-black.jpg" />
+    <Content Include="Content\Default\Images\btn\buy_now.png" />
+    <Content Include="Content\Default\Images\btn\cancel-black.jpg" />
+    <Content Include="Content\Default\Images\btn\cancel-blue.jpg" />
+    <Content Include="Content\Default\Images\btn\cancel-red.png" />
+    <Content Include="Content\Default\Images\btn\createuser.jpg" />
+    <Content Include="Content\Default\Images\btn\dashboard.jpg" />
+    <Content Include="Content\Default\Images\btn\free_trial_btn.png" />
+    <Content Include="Content\Default\Images\btn\importusers.jpg" />
+    <Content Include="Content\Default\Images\btn\login-blue.png" />
+    <Content Include="Content\Default\Images\btn\login.jpg" />
+    <Content Include="Content\Default\Images\btn\next-blue.jpg" />
+    <Content Include="Content\Default\Images\btn\ok.jpg" />
+    <Content Include="Content\Default\Images\btn\option2.png" />
+    <Content Include="Content\Default\Images\btn\proceed.jpg" />
+    <Content Include="Content\Default\Images\btn\proceed_to_checkout.png" />
+    <Content Include="Content\Default\Images\btn\register.jpg" />
+    <Content Include="Content\Default\Images\btn\reset.jpg" />
+    <Content Include="Content\Default\Images\btn\resetpwd.jpg" />
+    <Content Include="Content\Default\Images\btn\save.png" />
+    <Content Include="Content\Default\Images\btn\submit-blue.jpg" />
+    <Content Include="Content\Default\Images\btn\submit-order.jpg" />
+    <Content Include="Content\Default\Images\btn\suspend.jpg" />
+    <Content Include="Content\Default\Images\btn\terminate.jpg" />
+    <Content Include="Content\Default\Images\btn\terminate_btn.png" />
+    <Content Include="Content\Default\Images\btn\unassign.jpg" />
+    <Content Include="Content\Default\Images\btn\unsuspend.jpg" />
+    <Content Include="Content\Default\Images\btn_small.png" />
+    <Content Include="Content\Default\Images\calender-icon.png" />
+    <Content Include="Content\Default\Images\captcha.jpg" />
+    <Content Include="Content\Default\Images\cart.png" />
+    <Content Include="Content\Default\Images\cat_right_btm.png" />
+    <Content Include="Content\Default\Images\cat_right_top.png" />
+    <Content Include="Content\Default\Images\content_area.png" />
+    <Content Include="Content\Default\Images\content_area_btm.png" />
+    <Content Include="Content\Default\Images\content_area_btm_login.png" />
+    <Content Include="Content\Default\Images\content_area_login.png" />
+    <Content Include="Content\Default\Images\content_area_with_left.png" />
+    <Content Include="Content\Default\Images\customize.jpg" />
+    <Content Include="Content\Default\Images\divider.jpg" />
+    <Content Include="Content\Default\Images\downloadShortcut.jpg" />
+    <Content Include="Content\Default\Images\error.png" />
+    <Content Include="Content\Default\Images\event_btm.png" />
+    <Content Include="Content\Default\Images\event_mid.png" />
+    <Content Include="Content\Default\Images\event_title.png" />
+    <Content Include="Content\Default\Images\featured_apps_bg.png" />
+    <Content Include="Content\Default\Images\featured_btm.png" />
+    <Content Include="Content\Default\Images\featured_btm_small.png" />
+    <Content Include="Content\Default\Images\featured_mid.png" />
+    <Content Include="Content\Default\Images\featured_mid_small.png" />
+    <Content Include="Content\Default\Images\featured_title_bg.png" />
+    <Content Include="Content\Default\Images\featured_title_bg_small.png" />
+    <Content Include="Content\Default\Images\footer_bg.png" />
+    <Content Include="Content\Default\Images\form_bg.png" />
+    <Content Include="Content\Default\Images\help_icon.jpg" />
+    <Content Include="Content\Default\Images\icn-arrow-down-light.png" />
+    <Content Include="Content\Default\Images\icn-arrow-right-light.png" />
+    <Content Include="Content\Default\Images\icn-feed.png" />
+    <Content Include="Content\Default\Images\icn-link.png" />
+    <Content Include="Content\Default\Images\icons\add.png" />
+    <Content Include="Content\Default\Images\icons\arr-bg.png" />
+    <Content Include="Content\Default\Images\icons\contract.png" />
+    <Content Include="Content\Default\Images\icons\control.jpg" />
+    <Content Include="Content\Default\Images\icons\down.jpg" />
+    <Content Include="Content\Default\Images\icons\down.png" />
+    <Content Include="Content\Default\Images\icons\info.jpg" />
+    <Content Include="Content\Default\Images\icons\manage.png" />
+    <Content Include="Content\Default\Images\icons\member.png" />
+    <Content Include="Content\Default\Images\icons\more.jpg" />
+    <Content Include="Content\Default\Images\icons\notice.png" />
+    <Content Include="Content\Default\Images\icons\remove.png" />
+    <Content Include="Content\Default\Images\icons\up.jpg" />
+    <Content Include="Content\Default\Images\icons\up.png" />
+    <Content Include="Content\Default\Images\icons\user.png" />
+    <Content Include="Content\Default\Images\inactive-step.png" />
+    <Content Include="Content\Default\Images\info.png" />
+    <Content Include="Content\Default\Images\info_icon.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_flat_55_ffffff_40x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-icons_0073ea_256x240.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-icons_222222_256x240.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-icons_454545_256x240.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-icons_666666_256x240.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-icons_a83300_256x240.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-icons_cccccc_256x240.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-icons_ff0084_256x240.png" />
+    <Content Include="Content\Default\Images\JqueryUI\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\Default\Images\launch-arrow.jpg" />
+    <Content Include="Content\Default\Images\launch-arrow.png" />
+    <Content Include="Content\Default\Images\launch-bg.jpg" />
+    <Content Include="Content\Default\Images\launch-bg2.jpg" />
+    <Content Include="Content\Default\Images\launch-section.jpg" />
+    <Content Include="Content\Default\Images\loadingAnimation.gif" />
+    <Content Include="Content\Default\Images\logo.png" />
+    <Content Include="Content\Default\Images\logo2.png" />
+    <Content Include="Content\Default\Images\logo_mybiz_footer.png" />
+    <Content Include="Content\Default\Images\main_table_header.jpg" />
+    <Content Include="Content\Default\Images\mark.png" />
+    <Content Include="Content\Default\Images\member.png" />
+    <Content Include="Content\Default\Images\minus.png" />
+    <Content Include="Content\Default\Images\more-bg.jpg" />
+    <Content Include="Content\Default\Images\nav.png" />
+    <Content Include="Content\Default\Images\new-header.jpg" />
+    <Content Include="Content\Default\Images\order-summary-bg.png" />
+    <Content Include="Content\Default\Images\order-summary.jpg" />
+    <Content Include="Content\Default\Images\p_btm.png" />
+    <Content Include="Content\Default\Images\p_middle.png" />
+    <Content Include="Content\Default\Images\p_top.png" />
+    <Content Include="Content\Default\Images\qm.gif" />
+    <Content Include="Content\Default\Images\red.jpg" />
+    <Content Include="Content\Default\Images\icons\more_disabled.jpg" />
+    <Content Include="Content\Default\Images\refresh.jpg" />
+    <Content Include="Content\Default\Images\remove.jpg" />
+    <Content Include="Content\Default\Images\roundbox.png" />
+    <Content Include="Content\Default\Images\setting.png" />
+    <Content Include="Content\Default\Images\shopping-cart-small.jpg" />
+    <Content Include="Content\Default\Images\shopping-cart.jpg" />
+    <Content Include="Content\Default\Images\shopping-cart.png" />
+    <Content Include="Content\Default\Images\shotcutdown.gif" />
+    <Content Include="Content\Default\Images\shotcutdown_3d.gif" />
+    <Content Include="Content\Default\Images\footer1.gif" />
+    <Content Include="Content\Default\Images\sound.png" />
+    <Content Include="Content\Default\Images\sprites-16.png" />
+    <Content Include="Content\Default\Images\sprites-saas.png" />
+    <Content Include="Content\Default\Images\succesful_submission.jpg" />
+    <Content Include="Content\Default\Images\table_header.jpg" />
+    <Content Include="Content\Default\Images\table_header_bg.jpg" />
+    <Content Include="Content\Default\Images\tab_active.jpg" />
+    <Content Include="Content\Default\Images\tab_active.png" />
+    <Content Include="Content\Default\Images\tab_inactive.jpg" />
+    <Content Include="Content\Default\Images\tab_inactive.png" />
+    <Content Include="Content\Default\Images\tip\tip - Copy.png" />
+    <Content Include="Content\Default\Images\tip\tip.png" />
+    <Content Include="Content\Default\Images\tip\tip_arrows.png" />
+    <Content Include="Content\Default\Images\tip\tip_arrows_top.png" />
+    <Content Include="Content\Default\Images\title_bar.png" />
+    <Content Include="Content\Default\Images\title_bar_login.png" />
+    <Content Include="Content\Default\Images\tooltip-header.png" />
+    <Content Include="Content\Default\Images\transparent.gif" />
+    <Content Include="Content\Default\Images\users.jpg" />
+    <Content Include="Content\Default\Images\zonebar-downarrow.png" />
+    <Content Include="Content\Default\Images\_launch-section.jpg" />
+    <Content Include="Content\Default\Styles\jquery-ui-1.8.16.datatable.css" />
+    <Content Include="Content\Default\Styles\default.css" />
+    <Content Include="Content\Default\Styles\diQuery-collapsiblePanel.css" />
+    <Content Include="Content\Default\Styles\dropdown.css" />
+    <Content Include="Content\Default\Styles\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Content\Default\Styles\jquery-ui-1.8.16.dialog.css" />
+    <Content Include="Content\Default\Styles\jquery-ui.css" />
+    <Content Include="Content\Default\Styles\numericUpDown.css" />
+    <Content Include="Content\Default\Styles\pro_drop_1.css" />
+    <Content Include="Content\Default\Styles\selectbox.css" />
+    <Content Include="Content\Default\Styles\style.css" />
+    <Content Include="Content\Default\Styles\style_dropdown.css" />
+    <Content Include="Content\Default\Styles\supernote.css" />
+    <Content Include="Content\Default\Styles\thickbox.css" />
+    <Content Include="Content\Default\Styles\tip.css" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_12171120520115285000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_12276155023176404000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_12320152047664390000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_13185155105863349000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_13261114656941796000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_13276114856950108000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_13276123500950117000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_14044202830102697000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_14044203253102705000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_15.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_18291171303027406000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_3.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_33.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_54.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_6.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_8.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_46.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_43.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_44.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_67.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_38.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_65.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_17.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_63.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_4.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_50.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_16.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_0111.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_71.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_59.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_57.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_69.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_12212191321129549000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeSubOffer_33.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeSubOffer_12171120520115285000.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeSubOffer_43.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeSubOffer_44.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeSubOffer_57.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeSubOffer_71.htm" />
+    <Content Include="Content\html\ChangeOffer\ChangeOffer_13080191124768589000.htm" />
+    <Content Include="Content\html\joinasmember.htm" />
+    <Content Include="Content\html\ManageBilling.htm" />
+    <Content Include="Content\html\NormalAppMessage\AppMsg_0010.htm" />
+    <Content Include="Content\html\SlidingWizard\4\page_0.htm" />
+    <Content Include="Content\html\SlidingWizard\4\page_1.htm" />
+    <Content Include="Content\html\SlidingWizard\4\page_2.htm" />
+    <Content Include="Content\html\SlidingWizard\4\page_3.htm" />
+    <Content Include="Content\html\SlidingWizard\4\page_4.htm" />
+    <Content Include="Content\html\SlidingWizard\4\script.txt" />
+    <Content Include="Content\html\SlidingWizard\102\page_0.htm" />
+    <Content Include="Content\html\SlidingWizard\102\page_1.htm" />
+    <Content Include="Content\html\SlidingWizard\102\page_2.htm" />
+    <Content Include="Content\html\SlidingWizard\102\page_3.htm" />
+    <Content Include="Content\html\SlidingWizard\102\page_4.htm" />
+    <Content Include="Content\html\SlidingWizard\102\script.txt" />
+    <Content Include="Content\html\SlidingWizard\101\page_0.htm" />
+    <Content Include="Content\html\SlidingWizard\101\page_1.htm" />
+    <Content Include="Content\html\SlidingWizard\101\page_2.htm" />
+    <Content Include="Content\html\SlidingWizard\101\page_3.htm" />
+    <Content Include="Content\html\SlidingWizard\101\page_4.htm" />
+    <Content Include="Content\html\SlidingWizard\101\script.txt" />
+    <Content Include="Content\html\SlidingWizard\1\page_0.htm" />
+    <Content Include="Content\html\SlidingWizard\1\page_1.htm" />
+    <Content Include="Content\html\SlidingWizard\1\page_2.htm" />
+    <Content Include="Content\html\SlidingWizard\1\page_3.htm" />
+    <Content Include="Content\html\SlidingWizard\1\page_4.htm" />
+    <Content Include="Content\html\SlidingWizard\1\script.txt" />
+    <Content Include="Content\html\SmallLaunchpad\nothing1.html" />
+    <Content Include="Content\html\SmallLaunchpad\nothing.html" />
+    <Content Include="Content\html\SmallLaunchpad\nothing.swf" />
+    <Content Include="Content\html\StaticError.htm" />
+    <Content Include="Content\images\back_disabled.jpg" />
+    <Content Include="Content\images\back_enabled.jpg" />
+    <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\forward_disabled.jpg" />
+    <Content Include="Content\images\forward_enabled.jpg" />
+    <Content Include="Content\Default\Images\htmlhead.jpg" />
+    <Content Include="Content\images\free_trial.gif" />
+    <Content Include="Content\images\free_trial_old.gif" />
+    <Content Include="Content\images\no_image.gif" />
+    <Content Include="Content\images\sort_asc.png" />
+    <Content Include="Content\images\sort_asc_disabled.png" />
+    <Content Include="Content\images\sort_both.png" />
+    <Content Include="Content\images\sort_desc.png" />
+    <Content Include="Content\images\sort_desc_disabled.png" />
+    <Content Include="Content\html\CartCustomize\001.html" />
+    <Content Include="Content\html\CartCustomize\33.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="favicon.png" />
+    <Content Include="Global.asax" />
+    <Content Include="letgo.aspx" />
+    <Content Include="Report\UserControls\TextBoxCalendar.ascx" />
+    <Content Include="Scripts\anti-forgery-jquery.js" />
+    <Content Include="Scripts\jquery-1.12.4.min.js" />
+    <Content Include="Scripts\jquery-migrate-1.4.1.js" />
+    <Content Include="Scripts\ui\1.12.1\images\ui-icons_444444_256x240.png" />
+    <Content Include="Scripts\ui\1.12.1\images\ui-icons_555555_256x240.png" />
+    <Content Include="Scripts\ui\1.12.1\images\ui-icons_777620_256x240.png" />
+    <Content Include="Scripts\ui\1.12.1\images\ui-icons_777777_256x240.png" />
+    <Content Include="Scripts\ui\1.12.1\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Scripts\ui\1.12.1\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jquery.signalR-1.2.2.js" />
+    <Content Include="Scripts\jquery.signalR-1.2.2.min.js" />
+    <Content Include="Scripts\launch.signalR.js" />
+    <Content Include="Scripts\session.timeout.js" />
+    <Content Include="Scripts\ui\1.12.1\jquery-ui.css" />
+    <Content Include="Scripts\ui\1.12.1\jquery-ui.min.js" />
+    <Content Include="Scripts\ajaxfileupload.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.0.js" />
+    <Content Include="Scripts\jquery.browser.min.js" />
+    <Content Include="Scripts\jquery.dataTables.columnFilter.js" />
+    <Content Include="Scripts\jquery.dataTables.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.poshytip.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\json2.js" />
+    <Content Include="Scripts\passwordstrength.js" />
+    <Content Include="Scripts\starlight.common.js" />
+    <Content Include="Scripts\starlight.datapage.js" />
+    <Content Include="Scripts\starlight.validation.js" />
+    <Content Include="Scripts\diQuery-collapsiblePanel.js" />
+    <Content Include="Scripts\easySlider.packed.js" />
+    <Content Include="Scripts\jquery-ui-timepicker-addon.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.livequery.js" />
+    <Content Include="Scripts\jquery.selectbox-0.5.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\js.js" />
+    <Content Include="Scripts\nouse\dw_event.js" />
+    <Content Include="Scripts\nouse\dw_tooltip.js" />
+    <Content Include="Scripts\nouse\dw_tooltip_aux.js" />
+    <Content Include="Scripts\nouse\dw_viewport.js" />
+    <Content Include="Scripts\nouse\_dw_tooltip.js" />
+    <Content Include="Scripts\numericUpDown.js" />
+    <Content Include="Scripts\starlight.validation_m.js" />
+    <Content Include="Scripts\supernote.js" />
+    <Content Include="Scripts\swfobject.js" />
+    <Content Include="Scripts\s_code.js" />
+    <Content Include="Scripts\thickbox.js" />
+    <Content Include="Scripts\tooltip.jquery.js" />
+    <Content Include="Report\Report.aspx" />
+    <Content Include="ValidateLive.aspx" />
+    <Content Include="Views\OpenId\Identity.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\SDP4S.Common.BC\SDP4S.Common.BC.csproj">
+      <Project>{c0eac2ba-9e69-47cf-bc48-9daaf84568b5}</Project>
+      <Name>SDP4S.Common.BC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\SDP4S.Common.Common\SDP4S.Common.Common.csproj">
+      <Project>{b4074ff4-683a-4ead-b08f-f699f4905140}</Project>
+      <Name>SDP4S.Common.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\SDP4S.Common.Entity\SDP4S.Common.Entity.csproj">
+      <Project>{032a5b21-2ef8-4fca-a53f-226f7be65021}</Project>
+      <Name>SDP4S.Common.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\CommonApp\CommonApp.csproj">
+      <Project>{61383E53-23A5-4381-9CED-731CCB468327}</Project>
+      <Name>CommonApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\CommonBase\CommonBase.csproj">
+      <Project>{B1EC385C-3B01-4B3A-A347-74F5C8EC1A96}</Project>
+      <Name>CommonBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\SDP4S.Core.Common\SDP4S.Core.Common.csproj">
+      <Project>{308097AD-695D-49DA-9D63-9E42B2650C2A}</Project>
+      <Name>SDP4S.Core.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\SDP4S.Core.ServiceBus\SDP4S.Core.ServiceBus.csproj">
+      <Project>{F05783BB-1834-4C57-99F7-6FF7F5A55A1C}</Project>
+      <Name>SDP4S.Core.ServiceBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Language\Language.csproj">
+      <Project>{6AC6D107-938B-4191-BC1A-FA7D2509D7B7}</Project>
+      <Name>Language</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Order\SDP4S.Order.Common\SDP4S.Order.Common.csproj">
+      <Project>{480dbc51-75ca-4bff-be08-79240263e5e0}</Project>
+      <Name>SDP4S.Order.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDP4S.Web.Entity\SDP4S.Web.Entity.csproj">
+      <Project>{370A6E12-9C42-4ACE-96F3-5EA3036A7A39}</Project>
+      <Name>SDP4S.Web.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDP4S.Web.Common\SDP4S.Web.Common.csproj">
+      <Project>{0F449536-265E-4376-A6AD-5FBBFD7F3C61}</Project>
+      <Name>SDP4S.Web.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDP4S.Web.Utility\SDP4S.Web.Utility.csproj">
+      <Project>{F5E469C3-812E-487B-B2AA-81F60DCAE215}</Project>
+      <Name>SDP4S.Web.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\UnauthorizedAccess.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Error.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Default\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Test\Test.cshtml" />
+    <None Include="App_Data\wurfl.xml.gz" />
+    <None Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Content\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Content\images\Sorting icons.psd" />
+    <Content Include="Views\Order\ShoppingCart.cshtml" />
+    <Content Include="Views\Order\ShoppingCart_Customize.cshtml" />
+    <Content Include="Views\Order\ShoppingCart_Billing.cshtml" />
+    <Content Include="Views\Order\ShoppingCart_Confirmation.cshtml" />
+    <Content Include="Views\Order\ShoppingCart_AfterSubmission.cshtml" />
+    <Content Include="Views\Order\ShoppingCart_BillingNew.cshtml" />
+    <Content Include="Views\CustUser\ManageUser.cshtml" />
+    <Content Include="Views\CustUser\MyAccount.cshtml" />
+    <Content Include="Views\CustUser\ActiveAccount.cshtml" />
+    <Content Include="Views\Service\ManageUser.cshtml" />
+    <Content Include="Views\Home\Launchpad.cshtml" />
+    <Content Include="Views\Shared\Default\_Layout_black.cshtml" />
+    <Content Include="Views\Shared\Default\_LayoutForLogin.cshtml" />
+    <Content Include="Views\Order\_Cart.cshtml" />
+    <Content Include="Views\Service\Launch.cshtml" />
+    <Content Include="Views\Service\CreateShortcut.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\CustUser\ForgotPassword.cshtml" />
+    <Content Include="Views\CustUser\MaintainUser.cshtml" />
+    <Content Include="Views\Account\Successful.cshtml" />
+    <Content Include="Views\Test\Test1.cshtml" />
+    <Content Include="Views\CustUser\FindPassword.cshtml" />
+    <Content Include="Views\CustUser\InputOTP.cshtml" />
+    <Content Include="Views\CustUser\SetPassword.cshtml" />
+    <Content Include="Views\CustUser\ActiveAccountSMS.cshtml" />
+    <Content Include="Views\Service\PopupAssign.cshtml" />
+    <Content Include="Views\Order\_Customize.cshtml" />
+    <Content Include="Views\Service\ManageLicense.cshtml" />
+    <Content Include="Views\CustUser\SelectAppAssign.cshtml" />
+    <Content Include="Views\CustUser\SelectAppUnassign.cshtml" />
+    <Content Include="Views\Service\_Assign.cshtml" />
+    <Content Include="Views\Service\_ManageLicense.cshtml" />
+    <Content Include="Views\Order\AddToCart.cshtml" />
+    <Content Include="Views\Service\Contract.cshtml" />
+    <Content Include="Views\Service\Termination.cshtml" />
+    <Content Include="Views\Service\PopupUnassign.cshtml" />
+    <Content Include="Views\Service\ManageAppHome.cshtml" />
+    <Content Include="Views\Service\_Unassign.cshtml" />
+    <Content Include="Views\Shared\Default\_LayoutShoppingCart.cshtml" />
+    <Content Include="Views\Shared\Default\_MenuPartial.cshtml" />
+    <Content Include="Views\Account\UnauthorizedAccessUnlogin.cshtml" />
+    <Content Include="Views\Shared\Default\_CommonMessage.cshtml" />
+    <Content Include="Views\Home\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <None Include="Content\pdf\Letter of Authorisation.pdf" />
+    <None Include="Content\pdf\SingTel myBusiness - Billing Terms V1.0.pdf" />
+    <None Include="Content\pdf\SingTel myBusiness - Copyright V1.0.pdf" />
+    <None Include="Content\pdf\SingTel myBusiness - Forum Terms of Use %28030911%29 V1.0.pdf" />
+    <None Include="Content\pdf\SingTel myBusiness - General Terms V1.0.pdf" />
+    <None Include="Content\pdf\SingTel myBusiness - Terms of Use %28aka Privacy Policy%29 V1.0.pdf" />
+    <None Include="Content\pdf\SingTel myBusiness - TnC V1.5.pdf" />
+    <Content Include="Views\Service\ManageVAS.cshtml" />
+    <Content Include="Views\CustUser\UploadCompanyLogo.cshtml" />
+    <Content Include="Views\Shared\Default\_FooterLinkPartial.cshtml" />
+    <Content Include="MastPage.Master" />
+    <Content Include="Views\Service\CustUserAssign.cshtml" />
+    <Content Include="Views\Service\_ApplicationInfo.cshtml" />
+    <Content Include="Views\Service\OrderConfirmation.cshtml" />
+    <Content Include="Views\CustUser\ImportUser.cshtml" />
+    <None Include="Content\sampleFile\Bulk_Assignment.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\sampleFile\sample_BulkCreateUsers.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Views\CustUser\ViewFailed.cshtml" />
+    <Content Include="Views\Account\mLogin.cshtml" />
+    <Content Include="Views\Home\mLaunchpad.cshtml" />
+    <Content Include="Views\Home\DoubleClick.cshtml" />
+    <Content Include="Views\Home\ContactUs_Email.cshtml" />
+    <Content Include="Views\Account\SignOut.cshtml" />
+    <Content Include="Views\Order\SelectOffer.cshtml" />
+    <Content Include="Views\Order\SelectTrialOffer.cshtml" />
+    <Content Include="Views\Service\ManageLicense_Billing.cshtml" />
+    <Content Include="Views\Service\_AssignError.cshtml" />
+    <Content Include="Views\Service\CustUserUnassign.cshtml" />
+    <Content Include="Views\Service\_CustUserUnassign.cshtml" />
+    <Content Include="Views\Home\NotFound.cshtml" />
+    <Content Include="Views\Service\_CustUserAssign.cshtml" />
+    <Content Include="Views\Shared\Default\_Layout_black_CustUser.cshtml" />
+    <Content Include="Views\Shared\Default\_CommonMessage_CustUser.cshtml" />
+    <Content Include="Views\CustUser\CreateDepartment.cshtml" />
+    <Content Include="Views\Service\OrderConfirmationByManageVAS.cshtml" />
+    <Content Include="Views\Account\AccessError.cshtml" />
+    <Content Include="Views\Account\1-ClickLogin.cshtml" />
+    <Content Include="Views\Shared\Default\_FirstMenuPartialPage.cshtml" />
+    <Content Include="Views\CustUser\TermAndConditions.cshtml" />
+    <Content Include="Views\Service\SelectIns.cshtml" />
+    <Content Include="Views\Home\mLaunchpad-small.cshtml" />
+    <Content Include="Views\Service\BulkAssign.cshtml" />
+    <Content Include="Views\Service\ViewFailed.cshtml" />
+    <Content Include="Views\CustUser\ResetPasswordandResendEmail.cshtml" />
+    <Content Include="Views\CustUser\FindPasswordForResendEmail.cshtml" />
+    <Content Include="Views\Service\OptIn.cshtml" />
+    <Content Include="Views\Service\_ManageMenu.cshtml" />
+    <Content Include="Views\Service\TerminateBuffet.cshtml" />
+    <Content Include="Views\Service\TerminationBuffetConfirmation.cshtml" />
+    <Content Include="Views\Service\BulkAssignOnline.cshtml" />
+    <Content Include="Views\Service\ViewUsage.cshtml" />
+    <Content Include="Views\Service\PopupUpdateRole.cshtml" />
+    <Content Include="Views\CustUser\SelectAppChangeRole.cshtml" />
+    <Content Include="Views\Service\ViewMember.cshtml" />
+    <Content Include="Views\Service\LicenseDetails.cshtml" />
+    <Content Include="Views\Service\FailedTransaction.cshtml" />
+    <Content Include="Views\Order\CreditCard_TransactionFail.cshtml" />
+    <Content Include="Views\Order\CreditCard_TransactionSuccess.cshtml" />
+    <Content Include="Views\Order\ChoosePaymentType.cshtml" />
+    <Content Include="Views\Order\ShoppingCart_BillingCC.cshtml" />
+    <Content Include="Views\Service\AccountTransfer.cshtml" />
+    <Content Include="Views\Service\ChangeCreditCardFail.cshtml" />
+    <Content Include="Views\Service\ChangeCreditCardSuccess.cshtml" />
+    <Content Include="Views\Service\ChangeCreditCard.cshtml" />
+    <Content Include="Views\Service\_ManageCardMenu.cshtml" />
+    <Content Include="Views\Service\_CreditCardInfo.cshtml" />
+    <Content Include="Views\Service\FailedTransaction_Confirmation.cshtml" />
+    <Content Include="Views\Service\ChangeExpiryDate.cshtml" />
+    <Content Include="Views\Service\ManageService.cshtml" />
+    <Content Include="Views\Account\CreateBillingAccount.cshtml" />
+    <Content Include="Views\Account\SubmitSuccessful.cshtml" />
+    <Content Include="Views\Order\OrderCampaign.cshtml" />
+    <Content Include="packages.config" />
+    <Content Include="Views\Account\onestopregister.cshtml" />
+    <Content Include="Views\Shared\Default\_newLayoutForLogin.cshtml.cshtml" />
+    <Content Include="Views\Account\TestLogin.cshtml" />
+    <Content Include="Views\Account\_MaintenancePage.cshtml" />
+    <Content Include="Views\Account\_mMaintenancePage.cshtml" />
+    <Content Include="Views\Shared\Default\Partial\_BasicPopup.cshtml" />
+    <Content Include="Views\Home\SessionTimeout.cshtml" />
+    <Content Include="Views\Order\ChooseSubscriptionType.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="APP_CODE\" />
+    <Folder Include="Content\logos\" />
+    <Folder Include="Content\pdf\eula\" />
+    <Folder Include="Content\pdf\tnc\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8277</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
